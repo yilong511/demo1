@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>用户管理小例子</title>
+	<link type="text/css" rel="stylesheet" href="/demo1/easyui/themes/default/easyui.css">
+	<link type="text/css" rel="stylesheet" href="/demo1/easyui/themes/icon.css">
+	<link type="text/css" rel="stylesheet" href="/demo1/css/main.css">
+	<script type="text/javascript" src="/demo1/easyui/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="/demo1/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="/demo1/js/user.js"></script>
+</head>
+<body>
+	<table id="user-table">
+		<thead>
+			<tr>
+				<th field="name" width="100">名称</th>
+				<th field="phone" width="100">电话</th>
+				<th field="addr" width="100">地址</th>
+				<th field="duty" width="100">职务</th>
+			</tr>
+		</thead>
+	</table>
+	
+	<div id="user-window" title="用户窗口" style="width:400px;height:250px;">
+		<div style="padding:20px 20px 40px 80px;">
+			<form method="post">
+				<table>
+					<tr>
+						<td>名称：</td>
+						<td><input name="name"></input></td>
+					</tr>
+					<tr>
+						<td>电话：</td>
+						<td><input name="phone"></input></td>
+					</tr>
+					<tr>
+						<td>地址：</td>
+						<td><input name="addr"></input></td>
+					</tr>
+					<tr>
+						<td>职务：</td>
+						<td><input name="duty"></input></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div style="text-align:center;padding:5px;">
+			<a href="javascript:void(0)" onclick="saveUser()" id="btn-save" icon="icon-save">保存</a>
+			<a href="javascript:void(0)" onclick="closeWindow()" id="btn-cancel" icon="icon-cancel">取消</a>
+		</div>
+	</div>
+</body>
+</html>
